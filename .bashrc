@@ -99,7 +99,6 @@ alias da='date "+%Y-%m-%d %A    %T %Z"'
 
 
 
-######## Kendi aliaslarım  ##############
 alias mplayerconsole='mplayer -vo fbdev2 -zoom -x 1280 -y 1024 -subcp utf-8'
 alias sc='screen -r'
 alias sens='sensors'
