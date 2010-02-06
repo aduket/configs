@@ -1,0 +1,58 @@
+
+minimum_size 120 30
+alignment bottom_left
+gap_x 180
+gap_y 3
+
+
+own_window yes
+own_window_hints undecorated,below,skip_taskbar
+background no
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# fiddle with window
+use_spacer yes
+use_xft yes
+
+# Update interval in seconds
+update_interval 1.0
+
+# Minimum size of text area
+
+
+# Draw shades?
+draw_shades yes
+
+# Text stuff
+draw_outline no # amplifies text if yes
+draw_borders no
+
+uppercase no # set to yes if you want all text to be in uppercase
+
+# Stippled borders?
+stippled_borders 8
+
+# border margins
+border_margin 4
+
+# border width
+border_width 1
+
+# Default colors and also border colors, grey90 == #e5e5e5
+default_color white
+default_shade_color black
+default_outline_color white
+
+own_window_colour brown
+own_window_transparent yes
+
+
+override_utf8_locale no
+xftfont Terminus:size=8
+xftalpha 0.8
+TEXT
+${color #F09000}DWN${color #707070}: ${color red}${downspeed eth0}${color #F09000}UP${color #707070}: ${color red}${upspeed eth0}
+${color #F09000}TOT${color #707070}: ${color red}${totaldown eth0}${color #F09000}/${color #707070}${color red}${totalup eth0}
+${color #F09000}TEMPERATURE${color #707070}: ${color red}${execi 5 /home/d/.temp.sh}C
